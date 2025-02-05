@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Exemplo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Cabeçalho do site -->
+    <header>
+        <!-- Barra de navegação -->
+        <nav>
+            <img src="imagem/logo.png" alt="Logo do site exemplo">
+            <span>
+                <a href="index.html">Home</a>
+                <a href="empresa.html">Empresa</a>
+                <a href="serviços.html">Serviços</a>
+                <a href="fotos.html">Fotos</a>
+                <a href="videos.html">Vídeos</a>
+                <a href="contato.html">Contato</a>
+            </span>
+        </nav>
+    </header>
+    <!-- Seção ou divisões da página -->
+    <section class="imagem_destaque">
+        <img src="imagem/destaque 6.png" alt="Imagem genérica de contato">
+    </section>
+    <!-- Área com o conteúdo principal da página -->
+    <article>
+        <h1>Contate-nos</h1>
+        <section class="contato">
+            <form action="enviacontato.php" method="post" id="form1">
+                <div>
+                    <label for="">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div>
+                    <label for="">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="">Sexo:</label>
+                    <input type="radio" id="masculino" name="sexo" value="masc">Masculino
+                    <input type="radio" id="feminino" name="sexo" value="fem">Feminino
+                </div>
+                <div>
+                    <label for="">Estato:</label>
+                    <select name="Estado" id="Estado">
+                        <option></option>
+                        <option>SP</option>
+                        <option>MG</option>
+                        <option>PR</option>
+                        <option>RS</option>
+                        <option>BA</option>
+                        <option>ES</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="">Comentário:</label>
+                    <textarea name="comentario" id="Comentario" rows="8"></textarea>
+                </div>
+                <div>
+                    <label for="">Hobbies:</label>
+                    <input type="checkbox" name="cantar" id="cantar" value="1">Cantar
+                    <input type="checkbox" name="dormir" id="dormir" value="1">Dormir
+                    <input type="checkbox" name="dançar" id="dançar" value="1">Dançar
+                    <input type="checkbox" name="tocar" id="tocar" value="1">Tocar
+                    <input type="checkbox" name="jogar" id="jogar" value="1">Jogar
+                    <input type="checkbox" name="estudar" id="estudar" value="1">Estudar
+                </div>
+                <div>
+                    <input type="submit" name="enviar" id="enviar" value="Enviar Formulário">
+                </div>
+                <br><br><br><br>
+            </form>
+        </section>
+        <section class="mapa"></section>
+        <section>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1575.7174172218952!2d-122.42427626108052!3d37.82670491158873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085811569574f23%3A0x189c28e85a71ae17!2sIlha%20de%20Alcatraz!5e0!3m2!1spt-BR!2sbr!4v1731348717818!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section></section>
+    </article>
+    <!-- Rodapé do site -->
+    <footer>
+        <div>&copy; 2024 | Site de Exemplo | Créditos</div>
+        <div>
+            <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.youtube.com/" target="_blank"><i class="bi bi-youtube"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://whatsapp.com" target="_blank"><i class="bi bi-whatsapp"></i></a>
+        </div>
+    </footer>
+    <script src="js/validaFormulario.js"></script>
+</body>
+</html>
